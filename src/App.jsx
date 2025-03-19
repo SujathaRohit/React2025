@@ -2,7 +2,15 @@
 import Me from './assets/Me.jpg';
 import ToggleButton from './ToggleButton';
 import Counter from './CounterApp';
-import LoginLogout from './LoginLogout';
+import LoginAndLogout from './LoginAndLogout';
+import NameListMapMethod from './NameListMapMethod';
+import TaskList from './TaskList';
+import SimpleForm from './SimpleForm';
+import SimpleFeedback from './SimpleFeedback';
+import UnControlledComponentUseRef from './UncontrolledComponentUseRef';
+import SimpleLoginForm from './SimpleLoginForm';
+import SimpleLoginForm2 from './SimpleLoginForm2';
+import BasicStyledForm from './BasicStyledForm';
 
 function App(){
   return(
@@ -10,7 +18,9 @@ function App(){
      
 {/* <ToggleButton /> */}
         {/* <Counter/> */}
-        <LoginLogout />
+        {/* <LoginAndLogout /> */}
+    {/* <SimpleForm/> */}
+    <BasicStyledForm />
     </div>
   );
 }
