@@ -11,17 +11,22 @@ import UnControlledComponentUseRef from './UncontrolledComponentUseRef';
 import SimpleLoginForm from './SimpleLoginForm';
 import SimpleLoginForm2 from './SimpleLoginForm2';
 import BasicStyledForm from './BasicStyledForm';
+import SimpleTodo from './SimpleTodo';
+import DynamicSimpleTodo from './DynamicSimpleTodo';
+import ExpenseTracker from './ExpenseTracker';
+import ComponentMounting from './ComponentMounting';
+import ComponentUpdating from './ComponentUpdating';
+import ComponentUnmount from './ComponentUnmount';
+import { useState } from 'react';
 
 function App(){
+    const[show, setShow]= useState(true);
   return(
     <div>
-     
-{/* <ToggleButton /> */}
-        {/* <Counter/> */}
-        {/* <LoginAndLogout /> */}
-    {/* <SimpleForm/> */}
-    <BasicStyledForm />
+      <button onClick={()=> setShow(!show)}>Toggle button</button>
+      {show && <ComponentUnmount /> }
     </div>
   );
+  
 }
 export default App;
