@@ -39,13 +39,10 @@
         cursor: pointer;
         margin-top: 15px;
         transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
-        animation: bounce 1s infinite alternate;
+      
     }  
     button:hover{
         background: #0056b3;
         transform: scale(1.1);
     }
-    @keyframes bounce {
-        0%, 100% { transform: translateY(0); }
-        50% { transform: translateY(-10px); }
-      }
+  

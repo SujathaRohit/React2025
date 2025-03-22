@@ -17,14 +17,13 @@ import ExpenseTracker from './ExpenseTracker';
 import ComponentMounting from './ComponentMounting';
 import ComponentUpdating from './ComponentUpdating';
 import ComponentUnmount from './ComponentUnmount';
-import { useState } from 'react';
+import FetchUseEffectErrorHandling from './FetchUseEffectErrorHandling';
 
 function App(){
-    const[show, setShow]= useState(true);
+  
   return(
     <div>
-      <button onClick={()=> setShow(!show)}>Toggle button</button>
-      {show && <ComponentUnmount /> }
+     <FetchUseEffectErrorHandling />
     </div>
   );
   
