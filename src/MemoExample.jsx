@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useState, useMemo} from "react";
 
 const SlowFunction= (num)=>{
   console.log('Slow function');
@@ -12,7 +12,7 @@ const MemoExample = () =>{
   const[count, setCount]= useState(0);
   const[number, setNumber]= useState(1000000);
 
-  const result= SlowFunction(number);
+  const result= useMemo(()=>SlowFunction(number), [number]);
   return(
     <div>
       <h2>Sum: {result}</h2>
