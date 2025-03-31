@@ -1,0 +1,13 @@
+.weather-container{
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    
+}
+@media (max-width: 600px){
+    .weather-container{
+        width: 90%;
+        font-size: 14px;
+    }
+}
